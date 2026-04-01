@@ -199,7 +199,7 @@ form.addEventListener('submit', async e => {
     const data = await res.json();
 
     if (res.ok) {
-      formStatus.textContent = data.message || 'Message sent! I'll be in touch soon.';
+      formStatus.textContent = data.message || "Message sent! I'll be in touch soon.";
       formStatus.className   = 'form-status success';
       formStatus.style.display = 'block';
       form.reset();

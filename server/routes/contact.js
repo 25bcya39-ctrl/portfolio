@@ -65,7 +65,7 @@ router.post(
         }).catch(err => console.warn('Email send failed:', err.message));
       }
 
-      res.json({ success: true, message: 'Message received! I'll be in touch soon.' });
+      res.json({ success: true, message: "Message received! I'll be in touch soon." });
     } catch (err) {
       console.error('Contact error:', err);
       res.status(500).json({ error: 'Server error. Please try again later.' });
